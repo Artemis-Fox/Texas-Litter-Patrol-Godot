@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/ParallaxBackground.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node2D"]
+position = Vector2( 0, 32 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -48.0, 112.0 ],
+"_edit_vertical_guides_": [ 560.0 ]
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 640 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
